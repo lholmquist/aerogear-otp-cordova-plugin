@@ -1,0 +1,56 @@
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.jboss.aerogear.otp"
+    version="0.0.1">
+
+    <name>AeroGear OTP plugin</name>
+
+    <asset src="www/otp.js" target="otp.js" />
+
+    <!-- ios -->
+    <platform name="ios">
+        <plugins-plist key="AeroGearOTPPlugin"
+                    string="AeroGearOTPPlugin" />
+
+        <header-file src="AeroGearOTPPlugin.h" />
+        <source-file src="AeroGearOTPPlugin.m" />
+
+        <!--Can we have a target here for grouping -->
+        <header-file src="lib/AeroGearOTP/AeroGearOTP.h" />
+        <header-file src="lib/AeroGearOTP/AGBase32.h" />
+        <source-file src="lib/AeroGearOTP/AGBase32.m" />
+        <header-file src="lib/AeroGearOTP/AGClock.h" />
+        <source-file src="lib/AeroGearOTP/AGClock.m" />
+        <header-file src="lib/AeroGearOTP/AGOtp.h" />
+        <source-file src="lib/AeroGearOTP/AGOtp.m" />
+        <header-file src="lib/AeroGearOTP/AGStringEncoding.h" />
+        <source-file src="lib/AeroGearOTP/AGStringEncoding.m" />
+        <header-file src="lib/AeroGearOTP/AGTotp.h" />
+        <source-file src="lib/AeroGearOTP/AGTotp.m" />
+
+        <header-file src="lib/AFNetworking/AFHTTPClient.h" />
+        <source-file src="lib/AFNetworking/AFHTTPClient.m" />
+        <header-file src="lib/AFNetworking/AFHTTPRequestOperation.h" />
+        <source-file src="lib/AFNetworking/AFHTTPRequestOperation.m" />
+        <header-file src="lib/AFNetworking/AFImageRequestOperation.h" />
+        <source-file src="lib/AFNetworking/AFImageRequestOperation.m" />
+        <header-file src="lib/AFNetworking/AFJSONRequestOperation.h" />
+        <source-file src="lib/AFNetworking/AFJSONRequestOperation.m" />
+        <header-file src="lib/AFNetworking/AFJSONUtilities.h" />
+        <source-file src="lib/AFNetworking/AFJSONUtilities.m" />
+        <header-file src="lib/AFNetworking/AFNetworkActivityIndicatorManager.h" />
+        <source-file src="lib/AFNetworking/AFNetworkActivityIndicatorManager.m" />
+        <header-file src="lib/AFNetworking/AFNetworking.h" />
+        <header-file src="lib/AFNetworking/AFPropertyListRequestOperation.h" />
+        <source-file src="lib/AFNetworking/AFPropertyListRequestOperation.m" />
+        <header-file src="lib/AFNetworking/AFURLConnectionOperation.h" />
+        <source-file src="lib/AFNetworking/AFURLConnectionOperation.m" />
+        <header-file src="lib/AFNetworking/AFXMLRequestOperation.h" />
+        <source-file src="lib/AFNetworking/AFXMLRequestOperation.m" />
+        <header-file src="lib/AFNetworking/UIImageView+AFNetworking.h" />
+        <source-file src="lib/AFNetworking/UIImageView+AFNetworking.m" />
+
+
+    </platform>
+
+</plugin>
