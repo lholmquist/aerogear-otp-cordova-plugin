@@ -8,6 +8,18 @@
     AeroGearOTP.prototype = {
         sayHello: function( success, error ) {
             cordova.exec( success, error, "AeroGearOTPPlugin", "sayHello", [] );
+        },
+        login: function( success, error ) {
+            cordova.exec( success, error, "AeroGearOTPPlugin", "login", [] );
+        },
+        refresh: function( success, error ) {
+            cordova.exec( success, error, "AeroGearOTPPlugin", "refresh", [] );
+        },
+        logout: function( success, error ) {
+            cordova.exec( success, error, "AeroGearOTPPlugin", "logout", [] );
+        },
+        checkValidity: function( success, error ) {
+            cordova.exec( success, error, "AeroGearOTPPlugin", "checkValidity", [] );
         }
     };
 
